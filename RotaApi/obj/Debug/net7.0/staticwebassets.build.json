@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ocHRJL+7kya5vg4oJyxxpS5CFWG+qnTVAPphOgvQ1pE=",
+  "Source": "Rota.Api",
+  "BasePath": "_content/Rota.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

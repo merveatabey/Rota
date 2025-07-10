@@ -1,0 +1,58 @@
+﻿using System;
+using System.Threading.Tasks;
+using DataAccess;
+using Entities;
+using Rota.Core.Interfaces;
+
+namespace Rota.DataAccess.Repositories
+{
+    public class UnitOfWork : IUnitOfWork
+    {
+        private readonly AppDbContext _context;
+
+
+        //tek repository üreterek bellek kullanımını sınırlandırıyoruz.
+
+
+        // Private repository alanları
+        private IGenericRepository<User>? _users;
+        private IGenericRepository<Tour>? _tours;
+        private IGenericRepository<TourDay>? _tourDays;
+        private IGenericRepository<TourActivity>? _tourActivities;
+        private IGenericRepository<Hotel>? _hotels;
+        private IGenericRepository<Reservation>? _reservations;
+        private IGenericRepository<Payment>? _payments;
+        private IGenericRepository<Comment>? _comments;
+        private IGenericRepository<FavoriteTour>? _favoriteTours;
+        private IGenericRepository<Notification>? _notifications;
+        private IGenericRepository<Message>? _messages;
+
+        public UnitOfWork(AppDbContext context)
+        {
+            _context = context;
+        }
+
+        // Her repo yalnızca bir kez oluşturulur
+        public IGenericRepository<User> Users => _users ??= new GenericRepository<User>(_context);
+        public IGenericRepository<Tour> Tours => _tours ??= new GenericRepository<Tour>(_context);
+        public IGenericRepository<TourDay> TourDays => _tourDays ??= new GenericRepository<TourDay>(_context);
+        public IGenericRepository<TourActivity> TourActivities => _tourActivities ??= new GenericRepository<TourActivity>(_context);
+        public IGenericRepository<Hotel> Hotels => _hotels ??= new GenericRepository<Hotel>(_context);
+        public IGenericRepository<Reservation> Reservations => _reservations ??= new GenericRepository<Reservation>(_context);
+        public IGenericRepository<Payment> Payments => _payments ??= new GenericRepository<Payment>(_context);
+        public IGenericRepository<Comment> Comments => _comments ??= new GenericRepository<Comment>(_context);
+        public IGenericRepository<FavoriteTour> FavoriteTours => _favoriteTours ??= new GenericRepository<FavoriteTour>(_context);
+        public IGenericRepository<Notification> Notifications => _notifications ??= new GenericRepository<Notification>(_context);
+        public IGenericRepository<Message> Messages => _messages ??= new GenericRepository<Message>(_context);
+
+        public async Task<bool> SaveAsync()
+        {
+            return await _context.SaveChangesAsync() > 0;
+        }
+
+        public void Dispose()
+        {
+            _context.Dispose();
+        }
+    }
+}

@@ -1,0 +1,55 @@
+﻿<Properties StartupConfiguration="Birden Çok Proje">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RotaApi/appsettings.json">
+    <Files>
+      <File FileName="RotaApi/Program.cs" Line="61" Column="1" />
+      <File FileName="Business/Services/MailService.cs" Line="33" Column="56" />
+      <File FileName="RotaApi/Areas/User/Controllers/AuthController.cs" Line="65" Column="45" />
+      <File FileName="Business/Services/AuthService.cs" Line="39" Column="107" />
+      <File FileName="Core/Interfaces/IGenericRepository.cs" Line="15" Column="17" />
+      <File FileName="DataAccess/Repositories/GenericRepository.cs" Line="43" Column="10" />
+      <File FileName="Core/Utilities/EmailSettings.cs" Line="8" Column="27" />
+      <File FileName="Core/Interfaces/IAuthService.cs" Line="10" Column="8" />
+      <File FileName="Core/Utilities/JwtTokenGenerator.cs" Line="6" Column="39" />
+      <File FileName="RotaApi/appsettings.json" Line="27" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Rota" expanded="True">
+            <Node name="Rota.Api" expanded="True">
+              <Node name="Areas" expanded="True">
+                <Node name="User" expanded="True">
+                  <Node name="Controllers" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="appsettings.json" selected="True" />
+            </Node>
+            <Node name="Rota.Business" expanded="True">
+              <Node name="Services" expanded="True" />
+            </Node>
+            <Node name="Rota.Core" expanded="True">
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Utilities" expanded="True" />
+            </Node>
+            <Node name="Rota.DataAccess" expanded="True">
+              <Node name="Repositories" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Rota.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Birden Çok Proje" Name="Birden Çok Proje">
+      <Items>
+        <StartupItem ItemId="{E318FADE-FE6C-4A18-92D6-8793230FAAE6}" ItemName="Rota.Api" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+</Properties>
