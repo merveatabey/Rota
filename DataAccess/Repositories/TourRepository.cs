@@ -5,7 +5,7 @@ using Rota.Core.Interfaces;
 
 namespace Rota.DataAccess.Repositories
 {
-	public class TourRepository : GenericRepository<Tour>, ITourRepository
+	public class TourRepository : GenericRepository<Tour>
 	{
         private readonly AppDbContext _context;
 
@@ -13,7 +13,8 @@ namespace Rota.DataAccess.Repositories
         {
             _context = context;
         }
-        
+
+
 	}
 }
 

@@ -5,7 +5,7 @@ using Rota.Core.Interfaces;
 
 namespace Rota.DataAccess.Repositories
 {
-	public class PaymentRepository : GenericRepository<Payment>, IPaymentRepository
+	public class PaymentRepository : GenericRepository<Payment>
     {
         private readonly AppDbContext _context;
 

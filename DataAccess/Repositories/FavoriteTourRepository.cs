@@ -5,7 +5,7 @@ using Rota.Core.Interfaces;
 
 namespace Rota.DataAccess.Repositories
 {
-	public class FavoriteTourRepository : GenericRepository<FavoriteTour>, IFavoriteTourRepository
+	public class FavoriteTourRepository : GenericRepository<FavoriteTour>
 	{
         private readonly AppDbContext _context;
 

@@ -5,7 +5,7 @@ using Rota.Core.Interfaces;
 
 namespace Rota.DataAccess.Repositories
 {
-	public class NotificationRepository : GenericRepository<Notification>, INotificationRepository
+	public class NotificationRepository : GenericRepository<Notification>
 	{
         private readonly AppDbContext _context;
 

@@ -47,6 +47,11 @@ namespace Rota.DataAccess.Repositories
             return await _dbSet.FindAsync(id);
         }
 
+        public IQueryable<T> Query()
+        {
+            return _context.Set<T>().AsQueryable();
+        }
+
         public async Task<bool> SaveChangesAsync()
         {
             return await _context.SaveChangesAsync() > 0;

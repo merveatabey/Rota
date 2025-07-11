@@ -5,7 +5,7 @@ using Rota.Core.Interfaces;
 
 namespace Rota.DataAccess.Repositories
 {
-	public class CommentRepository : GenericRepository<Comment>, ICommentRepository
+	public class CommentRepository : GenericRepository<Comment>
 	{
 
 		private readonly AppDbContext _context;

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Rota.DataAccess.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250710100013_InitialCreate2")]
-    partial class InitialCreate2
+    [Migration("20250711075145_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

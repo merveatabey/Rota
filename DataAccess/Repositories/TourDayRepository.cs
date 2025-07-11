@@ -5,7 +5,7 @@ using Rota.Core.Interfaces;
 
 namespace Rota.DataAccess.Repositories
 {
-	public class TourDayRepository : GenericRepository<TourDay>, ITourDayRepository
+	public class TourDayRepository : GenericRepository<TourDay>
 	{
 
         private readonly AppDbContext _context;

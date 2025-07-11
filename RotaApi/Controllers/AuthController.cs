@@ -4,18 +4,17 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Rota.Core.Interfaces;
-using Rota.DataAccess.Repositories;
 using Rota.Entities.DTOs;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace Rota.Api.Areas.User.Controllers
+namespace Rota.Api.Controllers
 {
-    [Area("User")]
-    [Route("api/user/[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase
     {
+
 
         private readonly IAuthService _authService;
         private readonly IEmailService _emailService;
@@ -32,7 +31,7 @@ namespace Rota.Api.Areas.User.Controllers
         {
             try
             {
-             
+
                 var token = await _authService.RegisterAsync(dto);
                 return Ok(new { token });
             }
@@ -49,7 +48,8 @@ namespace Rota.Api.Areas.User.Controllers
             {
                 var token = await _authService.LoginAsync(dto);
                 return Ok(new { token });
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 return Unauthorized(new { message = ex.Message });
             }

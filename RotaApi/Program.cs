@@ -1,11 +1,14 @@
 ﻿using DataAccess;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using Rota.Business.Mapping;
 using Rota.Business.Services;
 using Rota.Core.Interfaces;
 using Rota.Core.Utilities;
 using Rota.DataAccess.Repositories;
+using Rota.Entities.DTOs;
 using System.Text;
 
 
@@ -19,6 +22,7 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<JwtTokenGenerator>();
 builder.Services.AddScoped<IEmailService, Rota.Business.Services.MailService>();
+builder.Services.AddScoped<ITourService, TourService>();
 
 // DbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -54,6 +58,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 // Email ayarları
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddSwaggerGen();
@@ -81,7 +86,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "areas",
-    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

@@ -5,7 +5,7 @@ using Rota.Core.Interfaces;
 
 namespace Rota.DataAccess.Repositories
 {
-	public class ReservationRepository  :GenericRepository<Reservation>, IReservationRepository
+	public class ReservationRepository  :GenericRepository<Reservation>
 	{
         private readonly AppDbContext _context;
 

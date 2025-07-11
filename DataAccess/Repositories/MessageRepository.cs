@@ -5,7 +5,7 @@ using Rota.Core.Interfaces;
 
 namespace Rota.DataAccess.Repositories
 {
-	public class MessageRepository : GenericRepository<Message>, IMessageRepository
+	public class MessageRepository : GenericRepository<Message>
 	{
         private readonly AppDbContext _context;
 

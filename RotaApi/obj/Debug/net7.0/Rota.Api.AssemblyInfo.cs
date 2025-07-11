@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Rota.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+edfb186cef40ae55847df4f45783c6cc62a399de")]
 [assembly: System.Reflection.AssemblyProductAttribute("Rota.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Rota.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
