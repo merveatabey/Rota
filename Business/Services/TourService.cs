@@ -35,7 +35,7 @@ namespace Rota.Business.Services
             }
 
             _unitOfWork.Tours.Delete(tour);
-            _unitOfWork.SaveAsync();
+            await _unitOfWork.SaveAsync();
 
         }
 
@@ -54,6 +54,11 @@ namespace Rota.Business.Services
             }
 
             return _mapper.Map<TourDto>(tour);
+        }
+
+        public async Task<List<PopularTourDto>> GetPopularToursAsync()
+        {
+            return await _unitOfWork.CustomTours.GetPopularToursAsync();
         }
 
         // Tour detaylarını ilişkili tüm verilerle birlikte getir

@@ -8,7 +8,6 @@ using Rota.Business.Services;
 using Rota.Core.Interfaces;
 using Rota.Core.Utilities;
 using Rota.DataAccess.Repositories;
-using Rota.Entities.DTOs;
 using System.Text;
 
 
@@ -21,8 +20,14 @@ builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepositor
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<JwtTokenGenerator>();
-builder.Services.AddScoped<IEmailService, Rota.Business.Services.MailService>();
+builder.Services.AddScoped<IEmailService,MailService>();
 builder.Services.AddScoped<ITourService, TourService>();
+builder.Services.AddScoped<IHotelService, HotelService>();
+builder.Services.AddScoped<ITourActivityService, TourActivityService>();
+builder.Services.AddScoped<IReservationService, ReservationService>();
+builder.Services.AddScoped<ICommentService, CommentService>();
+
+
 
 // DbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -61,6 +66,7 @@ builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("Emai
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
 builder.Services.AddControllersWithViews();
+
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
@@ -88,5 +94,6 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
 
 app.Run();

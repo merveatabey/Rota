@@ -13,6 +13,9 @@ namespace Rota.Entities.DTOs
 		public string Category { get; set; }
 		public Guid? GuideId { get; set; }
 		public string GuideName { get; set; }
-	}
+        public double AverageRating { get; set; }
+        public string ImageUrl { get; set; }
+
+    }
 }
 

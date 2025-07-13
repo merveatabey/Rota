@@ -17,6 +17,9 @@ namespace Rota.Core.Interfaces
         IGenericRepository<FavoriteTour> FavoriteTours { get; }
         IGenericRepository<Notification> Notifications { get; }
         IGenericRepository<Message> Messages { get; }
+        ITourRepository CustomTours { get; }
+        ICommentRepository CustomComments { get; }
+
 
         Task<bool> SaveAsync();
     }

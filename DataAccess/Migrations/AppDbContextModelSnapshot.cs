@@ -265,6 +265,10 @@ namespace Rota.DataAccess.Migrations
                     b.Property<Guid?>("GuideId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 

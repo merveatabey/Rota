@@ -26,6 +26,8 @@ namespace Rota.DataAccess.Repositories
         private IGenericRepository<FavoriteTour>? _favoriteTours;
         private IGenericRepository<Notification>? _notifications;
         private IGenericRepository<Message>? _messages;
+        private ITourRepository? _customTours;
+        private ICommentRepository? _customComments;
 
         public UnitOfWork(AppDbContext context)
         {
@@ -44,6 +46,10 @@ namespace Rota.DataAccess.Repositories
         public IGenericRepository<FavoriteTour> FavoriteTours => _favoriteTours ??= new GenericRepository<FavoriteTour>(_context);
         public IGenericRepository<Notification> Notifications => _notifications ??= new GenericRepository<Notification>(_context);
         public IGenericRepository<Message> Messages => _messages ??= new GenericRepository<Message>(_context);
+
+        public ITourRepository CustomTours => _customTours ??= new TourRepository(_context);
+
+        public ICommentRepository CustomComments => _customComments ??= new CommentRepository(_context);
 
         public async Task<bool> SaveAsync()
         {

@@ -8,6 +8,8 @@ namespace Rota.Entities.DTOs
         public string City { get; set; }
         public int Star { get; set; }
         public bool IncludedInPrice { get; set; }
+        public int TourId { get; set; }
     }
+
 }
 

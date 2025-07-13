@@ -10,7 +10,14 @@ namespace Rota.Business.Mapping
 		public AutoMapperProfile()
 		{
 			CreateMap<Tour, TourDto>().ReverseMap();
-		}
-	}
+			CreateMap<Hotel, HotelDto>().ReverseMap();
+            CreateMap<TourActivity, TourActivityDto>().ReverseMap();
+            CreateMap<Reservation, ReservationDto>().ReverseMap();
+            CreateMap<Comment, CommentDto>().ReverseMap();
+
+
+
+        }
+    }
 }
 
