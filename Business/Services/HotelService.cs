@@ -21,7 +21,9 @@ namespace Rota.Business.Services
 
         public async Task CreateAsync(HotelDto dto)
         {
+
             var hotels = _mapper.Map<Hotel>(dto);
+
             await _unitOfWork.Hotels.AddAsync(hotels);
             await _unitOfWork.SaveAsync();
         }

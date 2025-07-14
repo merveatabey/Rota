@@ -53,8 +53,36 @@ namespace Rota.Api.Controllers
             {
                 return Unauthorized(new { message = ex.Message });
             }
+            
         }
 
+
+        [HttpPost("adminlogin")]
+        public async Task<IActionResult> AdminLogin([FromBody] LoginDto dto)
+        {
+            try
+            {
+                // Kullanıcı bilgilerini al
+                var user = await _authService.GetByEmailAsync(dto.Email);
+
+                if (user == null)
+                    return Unauthorized(new { message = "Kullanıcı bulunamadı." });
+
+                if (user.Role != "Admin")
+                    return Unauthorized(new { message = "Bu alana sadece admin girişi yapılabilir." });
+
+
+                // Giriş başarılı, token oluştur
+                var token = await _authService.LoginAsync(dto);
+
+                return Ok(new { token });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+
+        }
 
         //Kullanıcıya şifre sıfırlama linki veya geçici token içeren mail gönderir.
         [HttpPost("forgot-password")]

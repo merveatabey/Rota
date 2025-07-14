@@ -19,6 +19,7 @@ namespace Rota.Core.Interfaces
         IGenericRepository<Message> Messages { get; }
         ITourRepository CustomTours { get; }
         ICommentRepository CustomComments { get; }
+        IUserRepository AdminUsers { get; }
 
 
         Task<bool> SaveAsync();

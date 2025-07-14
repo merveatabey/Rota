@@ -1389,19 +1389,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/mervesefil/.nuget/packages/": {}
+    "/Users/a1-03/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mervesefil/Projects/Rota/Business/Rota.Business.csproj",
+      "projectUniqueName": "/Users/a1-03/Projects/Rota/Business/Rota.Business.csproj",
       "projectName": "Rota.Business",
-      "projectPath": "/Users/mervesefil/Projects/Rota/Business/Rota.Business.csproj",
-      "packagesPath": "/Users/mervesefil/.nuget/packages/",
-      "outputPath": "/Users/mervesefil/Projects/Rota/Business/obj/",
+      "projectPath": "/Users/a1-03/Projects/Rota/Business/Rota.Business.csproj",
+      "packagesPath": "/Users/a1-03/.nuget/packages/",
+      "outputPath": "/Users/a1-03/Projects/Rota/Business/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/mervesefil/.nuget/NuGet/NuGet.Config"
+        "/Users/a1-03/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -1413,8 +1413,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/mervesefil/Projects/Rota/Core/Rota.Core.csproj": {
-              "projectPath": "/Users/mervesefil/Projects/Rota/Core/Rota.Core.csproj"
+            "/Users/a1-03/Projects/Rota/Core/Rota.Core.csproj": {
+              "projectPath": "/Users/a1-03/Projects/Rota/Core/Rota.Core.csproj"
             }
           }
         }
@@ -1474,7 +1474,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.317/RuntimeIdentifierGraph.json"
       }
     }
   }

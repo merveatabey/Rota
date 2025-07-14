@@ -1,5 +1,4 @@
 ﻿<Properties StartupConfiguration="Birden Çok Proje">
-  <MonoDevelop.Ide.ItemProperties.Rota.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="Birden Çok Proje" Name="Birden Çok Proje">
       <Items>
@@ -7,15 +6,20 @@
       </Items>
     </MultiItemSolutionRunConfiguration>
   </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Rota.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="RotaApi/Controllers/TourController.cs">
     <Files>
-      <File FileName="RotaApi/Program.cs" Line="4" Column="18" />
-      <File FileName="RotaApi/Controllers/CommentController.cs" Line="36" Column="24" />
-      <File FileName="RotaApi/Controllers/TourController.cs" Line="62" Column="18" />
+      <File FileName="RotaApi/Program.cs" Line="25" Column="53" />
+      <File FileName="RotaApi/Controllers/TourController.cs" Line="82" Column="40" />
+      <File FileName="Business/Services/TourService.cs" Line="16" Column="1" />
+      <File FileName="Entities/DTOs/TourDetailsDto.cs" Line="13" Column="45" />
+      <File FileName="Entities/DTOs/TourDto.cs" Line="15" Column="46" />
+      <File FileName="Business/Services/AuthService.cs" Line="65" Column="61" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,24 +29,19 @@
               <Node name="Controllers" expanded="True">
                 <Node name="TourController.cs" selected="True" />
               </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="img" expanded="True" />
+              </Node>
             </Node>
-            <Node name="Rota.Business" expanded="True">
-              <Node name="Services" expanded="True" />
-            </Node>
-            <Node name="Rota.Core" expanded="True">
-              <Node name="Interfaces" expanded="True" />
+            <Node name="Rota.Business">
+              <Node name="Mapping" expanded="True" />
             </Node>
             <Node name="Rota.DataAccess">
               <Node name="Repositories" expanded="True" />
-            </Node>
-            <Node name="Rota.Entities">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="DTOs" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

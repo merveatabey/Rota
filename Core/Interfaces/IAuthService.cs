@@ -9,6 +9,8 @@ namespace Rota.Core.Interfaces
 		Task<string> LoginAsync(LoginDto dto);
 		Task ForgotPasswordAsync(ForgotPasswordDto dto);
 		Task ResetPasswordAsync(ResetPasswordDto dto);
+		Task<UserDto> GetByEmailAsync(string email);
+        Task<IEnumerable<UserDto>> GetGuidesAsync();
     }
 }
 

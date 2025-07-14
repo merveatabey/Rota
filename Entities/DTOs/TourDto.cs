@@ -11,10 +11,10 @@ namespace Rota.Entities.DTOs
 		public decimal Price { get; set; }
 		public int Capacity { get; set; }
 		public string Category { get; set; }
-		public Guid? GuideId { get; set; }
-		public string GuideName { get; set; }
+        public Guid? GuideId { get; set; }
+        public string GuideName { get; set; }
         public double AverageRating { get; set; }
-        public string ImageUrl { get; set; }
+        public string? ImageUrl { get; set; }
 
     }
 }

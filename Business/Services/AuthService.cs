@@ -48,6 +48,35 @@ namespace Rota.Business.Services
             await _emailService.SendPasswordResetMail(user.Email, resetLink);
         }
 
+        public async Task<UserDto> GetByEmailAsync(string email)
+        {
+            var user = await _unitOfWork.AdminUsers.GetByEmailAsync(email);
+            if (user == null)
+                return null;
+            return new UserDto
+            {
+                Email = user.Email,
+                Role = user.Role,
+                FullName = user.FullName
+            };
+
+        }
+
+        public async Task<IEnumerable<UserDto>> GetGuidesAsync()
+        {
+            var guides = await _unitOfWork.AdminUsers.GetAllGuidesAsync();
+
+            var guideDtos = guides.Select(g => new UserDto
+            {
+                Id = g.Id,
+                FullName = g.FullName,
+                Role = g.Role,
+                // diğer gerekli alanlar...
+            }).ToList();
+
+            return (guideDtos);
+        }
+
         public async Task<string> LoginAsync(LoginDto dto)
         {
             var user = (await _unitOfWork.Users.FindAsync(u => u.Email == dto.Email)).FirstOrDefault();
@@ -73,8 +102,6 @@ namespace Rota.Business.Services
 
             return _jwt.GeneratorToken(userDto);
         }
-
-
 
 
 

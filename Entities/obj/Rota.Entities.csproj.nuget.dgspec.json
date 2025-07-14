@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mervesefil/Projects/Rota/Entities/Rota.Entities.csproj": {}
+    "/Users/a1-03/Projects/Rota/Entities/Rota.Entities.csproj": {}
   },
   "projects": {
-    "/Users/mervesefil/Projects/Rota/Entities/Rota.Entities.csproj": {
+    "/Users/a1-03/Projects/Rota/Entities/Rota.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mervesefil/Projects/Rota/Entities/Rota.Entities.csproj",
+        "projectUniqueName": "/Users/a1-03/Projects/Rota/Entities/Rota.Entities.csproj",
         "projectName": "Rota.Entities",
-        "projectPath": "/Users/mervesefil/Projects/Rota/Entities/Rota.Entities.csproj",
-        "packagesPath": "/Users/mervesefil/.nuget/packages/",
-        "outputPath": "/Users/mervesefil/Projects/Rota/Entities/obj/",
+        "projectPath": "/Users/a1-03/Projects/Rota/Entities/Rota.Entities.csproj",
+        "packagesPath": "/Users/a1-03/.nuget/packages/",
+        "outputPath": "/Users/a1-03/Projects/Rota/Entities/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/mervesefil/.nuget/NuGet/NuGet.Config"
+          "/Users/a1-03/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -32,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -53,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.410/RuntimeIdentifierGraph.json"
         }
       }
     }

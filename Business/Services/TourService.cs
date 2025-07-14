@@ -58,14 +58,15 @@ namespace Rota.Business.Services
 
         public async Task<List<PopularTourDto>> GetPopularToursAsync()
         {
-            return await _unitOfWork.CustomTours.GetPopularToursAsync();
+            var tours = await _unitOfWork.CustomTours.GetPopularToursAsync();
+            return _mapper.Map<List<PopularTourDto>>(tours);
+            
         }
 
         // Tour detaylarını ilişkili tüm verilerle birlikte getir
         public async Task<TourDetailsDto> GetTourDetailsAsync(int tourId)
         {
             var tour = await _unitOfWork.Tours.Query()
-                .Include(t => t.Guide)
                 .Include(t => t.Days)
                     .ThenInclude(d => d.Activities)
                 .Include(t => t.Hotels)
@@ -74,6 +75,12 @@ namespace Rota.Business.Services
             if (tour == null) throw new KeyNotFoundException("Tour not found.");
 
             return _mapper.Map<TourDetailsDto>(tour);
+        }
+
+        public async Task<IEnumerable<TourDto>> SearchAsync(string query)
+        {
+            var tours =  await _unitOfWork.CustomTours.SearchAsync(query);
+            return _mapper.Map<IEnumerable<TourDto>>(tours);
         }
 
         public async Task UpdateAsync(TourDto dto)

@@ -41,5 +41,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="wwwroot\" />
+    <Folder Include="wwwroot\img\" />
+    <Folder Include="wwwroot\img\tours\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\" />
+    <Content Remove="wwwroot\img\" />
+    <Content Remove="wwwroot\img\tours\" />
   </ItemGroup>
 </Project>

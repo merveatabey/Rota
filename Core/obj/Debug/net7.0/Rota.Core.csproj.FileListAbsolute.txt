@@ -12,7 +12,6 @@
 /Users/a1-03/Projects/Rota/Core/obj/Debug/net7.0/refint/Rota.Core.dll
 /Users/a1-03/Projects/Rota/Core/obj/Debug/net7.0/Rota.Core.pdb
 /Users/a1-03/Projects/Rota/Core/obj/Debug/net7.0/ref/Rota.Core.dll
-/Users/a1-03/Projects/Rota/Core/obj/Debug/net7.0/Rota.Core.csproj.CopyComplete
 /Users/mervesefil/Projects/Rota/Core/bin/Debug/net7.0/Rota.Core.deps.json
 /Users/mervesefil/Projects/Rota/Core/bin/Debug/net7.0/Rota.Core.dll
 /Users/mervesefil/Projects/Rota/Core/bin/Debug/net7.0/Rota.Core.pdb
@@ -28,3 +27,4 @@
 /Users/mervesefil/Projects/Rota/Core/obj/Debug/net7.0/Rota.Core.pdb
 /Users/mervesefil/Projects/Rota/Core/obj/Debug/net7.0/ref/Rota.Core.dll
 /Users/mervesefil/Projects/Rota/Core/obj/Debug/net7.0/Rota.Core.csproj.CopyComplete
+/Users/a1-03/Projects/Rota/Core/obj/Debug/net7.0/Rota.Core.csproj.CopyComplete

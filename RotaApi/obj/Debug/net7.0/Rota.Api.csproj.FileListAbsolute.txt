@@ -190,3 +190,5 @@
 /Users/mervesefil/Projects/Rota/RotaApi/obj/Debug/net7.0/Rota.Api.pdb
 /Users/mervesefil/Projects/Rota/RotaApi/obj/Debug/net7.0/Rota.Api.genruntimeconfig.cache
 /Users/mervesefil/Projects/Rota/RotaApi/obj/Debug/net7.0/ref/Rota.Api.dll
+/Users/a1-03/Projects/Rota/RotaApi/bin/Debug/net7.0/Dapper.dll
+/Users/a1-03/Projects/Rota/RotaApi/bin/Debug/net7.0/Rota.Api.staticwebassets.runtime.json

@@ -1,11 +1,88 @@
 {
   "Version": 1,
-  "Hash": "ocHRJL+7kya5vg4oJyxxpS5CFWG+qnTVAPphOgvQ1pE=",
+  "Hash": "y5HsVmyKQp8ak6ksKhWLf6NK+qq/x4WeSXooDSJKKkE=",
   "Source": "Rota.Api",
   "BasePath": "_content/Rota.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "Rota.Api/wwwroot",
+      "Source": "Rota.Api",
+      "ContentRoot": "/Users/a1-03/Projects/Rota/RotaApi/wwwroot/",
+      "BasePath": "_content/Rota.Api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/a1-03/Projects/Rota/RotaApi/wwwroot/.DS_Store",
+      "SourceId": "Rota.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/a1-03/Projects/Rota/RotaApi/wwwroot/",
+      "BasePath": "_content/Rota.Api",
+      "RelativePath": ".DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.DS_Store"
+    },
+    {
+      "Identity": "/Users/a1-03/Projects/Rota/RotaApi/wwwroot/img/.DS_Store",
+      "SourceId": "Rota.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/a1-03/Projects/Rota/RotaApi/wwwroot/",
+      "BasePath": "_content/Rota.Api",
+      "RelativePath": "img/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/.DS_Store"
+    },
+    {
+      "Identity": "/Users/a1-03/Projects/Rota/RotaApi/wwwroot/img/tours/68e074a3-cf2c-4357-bfba-489ac609881a.jpg",
+      "SourceId": "Rota.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/a1-03/Projects/Rota/RotaApi/wwwroot/",
+      "BasePath": "_content/Rota.Api",
+      "RelativePath": "img/tours/68e074a3-cf2c-4357-bfba-489ac609881a.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/tours/68e074a3-cf2c-4357-bfba-489ac609881a.jpg"
+    },
+    {
+      "Identity": "/Users/a1-03/Projects/Rota/RotaApi/wwwroot/img/tours/yasin-gucluturk-7D6KdRl-gZE-unsplash.jpg",
+      "SourceId": "Rota.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/a1-03/Projects/Rota/RotaApi/wwwroot/",
+      "BasePath": "_content/Rota.Api",
+      "RelativePath": "img/tours/yasin-gucluturk-7D6KdRl-gZE-unsplash.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/tours/yasin-gucluturk-7D6KdRl-gZE-unsplash.jpg"
+    }
+  ]
 }

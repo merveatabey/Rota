@@ -9,7 +9,6 @@
 /Users/a1-03/Projects/Rota/Entities/obj/Debug/net7.0/refint/Rota.Entities.dll
 /Users/a1-03/Projects/Rota/Entities/obj/Debug/net7.0/Rota.Entities.pdb
 /Users/a1-03/Projects/Rota/Entities/obj/Debug/net7.0/ref/Rota.Entities.dll
-/Users/a1-03/Projects/Rota/Entities/obj/Debug/net7.0/Rota.Entities.csproj.AssemblyReference.cache
 /Users/mervesefil/Projects/Rota/Entities/bin/Debug/net7.0/Rota.Entities.deps.json
 /Users/mervesefil/Projects/Rota/Entities/bin/Debug/net7.0/Rota.Entities.dll
 /Users/mervesefil/Projects/Rota/Entities/bin/Debug/net7.0/Rota.Entities.pdb
@@ -22,3 +21,4 @@
 /Users/mervesefil/Projects/Rota/Entities/obj/Debug/net7.0/Rota.Entities.pdb
 /Users/mervesefil/Projects/Rota/Entities/obj/Debug/net7.0/ref/Rota.Entities.dll
 /Users/mervesefil/Projects/Rota/Entities/obj/Debug/net7.0/Rota.Entities.csproj.AssemblyReference.cache
+/Users/a1-03/Projects/Rota/Entities/obj/Debug/net7.0/Rota.Entities.csproj.AssemblyReference.cache

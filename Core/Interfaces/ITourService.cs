@@ -7,6 +7,8 @@ namespace Rota.Core.Interfaces
 	{
 		Task<TourDetailsDto> GetTourDetailsAsync(int tourId);
         Task<List<PopularTourDto>> GetPopularToursAsync();
+		Task<IEnumerable<TourDto>> SearchAsync(string query);
+		
     }
 }
 

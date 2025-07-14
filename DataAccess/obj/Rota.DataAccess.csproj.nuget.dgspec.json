@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mervesefil/Projects/Rota/DataAccess/Rota.DataAccess.csproj": {}
+    "/Users/a1-03/Projects/Rota/DataAccess/Rota.DataAccess.csproj": {}
   },
   "projects": {
-    "/Users/mervesefil/Projects/Rota/Core/Rota.Core.csproj": {
+    "/Users/a1-03/Projects/Rota/Core/Rota.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mervesefil/Projects/Rota/Core/Rota.Core.csproj",
+        "projectUniqueName": "/Users/a1-03/Projects/Rota/Core/Rota.Core.csproj",
         "projectName": "Rota.Core",
-        "projectPath": "/Users/mervesefil/Projects/Rota/Core/Rota.Core.csproj",
-        "packagesPath": "/Users/mervesefil/.nuget/packages/",
-        "outputPath": "/Users/mervesefil/Projects/Rota/Core/obj/",
+        "projectPath": "/Users/a1-03/Projects/Rota/Core/Rota.Core.csproj",
+        "packagesPath": "/Users/a1-03/.nuget/packages/",
+        "outputPath": "/Users/a1-03/Projects/Rota/Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/mervesefil/.nuget/NuGet/NuGet.Config"
+          "/Users/a1-03/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/mervesefil/Projects/Rota/Entities/Rota.Entities.csproj": {
-                "projectPath": "/Users/mervesefil/Projects/Rota/Entities/Rota.Entities.csproj"
+              "/Users/a1-03/Projects/Rota/Entities/Rota.Entities.csproj": {
+                "projectPath": "/Users/a1-03/Projects/Rota/Entities/Rota.Entities.csproj"
               }
             }
           }
@@ -67,21 +67,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.317/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/mervesefil/Projects/Rota/DataAccess/Rota.DataAccess.csproj": {
+    "/Users/a1-03/Projects/Rota/DataAccess/Rota.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mervesefil/Projects/Rota/DataAccess/Rota.DataAccess.csproj",
+        "projectUniqueName": "/Users/a1-03/Projects/Rota/DataAccess/Rota.DataAccess.csproj",
         "projectName": "Rota.DataAccess",
-        "projectPath": "/Users/mervesefil/Projects/Rota/DataAccess/Rota.DataAccess.csproj",
-        "packagesPath": "/Users/mervesefil/.nuget/packages/",
-        "outputPath": "/Users/mervesefil/Projects/Rota/DataAccess/obj/",
+        "projectPath": "/Users/a1-03/Projects/Rota/DataAccess/Rota.DataAccess.csproj",
+        "packagesPath": "/Users/a1-03/.nuget/packages/",
+        "outputPath": "/Users/a1-03/Projects/Rota/DataAccess/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/mervesefil/.nuget/NuGet/NuGet.Config"
+          "/Users/a1-03/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -93,11 +93,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/mervesefil/Projects/Rota/Core/Rota.Core.csproj": {
-                "projectPath": "/Users/mervesefil/Projects/Rota/Core/Rota.Core.csproj"
+              "/Users/a1-03/Projects/Rota/Core/Rota.Core.csproj": {
+                "projectPath": "/Users/a1-03/Projects/Rota/Core/Rota.Core.csproj"
               },
-              "/Users/mervesefil/Projects/Rota/Entities/Rota.Entities.csproj": {
-                "projectPath": "/Users/mervesefil/Projects/Rota/Entities/Rota.Entities.csproj"
+              "/Users/a1-03/Projects/Rota/Entities/Rota.Entities.csproj": {
+                "projectPath": "/Users/a1-03/Projects/Rota/Entities/Rota.Entities.csproj"
               }
             }
           }
@@ -112,6 +112,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.16, )"
@@ -149,21 +153,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.317/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/mervesefil/Projects/Rota/Entities/Rota.Entities.csproj": {
+    "/Users/a1-03/Projects/Rota/Entities/Rota.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mervesefil/Projects/Rota/Entities/Rota.Entities.csproj",
+        "projectUniqueName": "/Users/a1-03/Projects/Rota/Entities/Rota.Entities.csproj",
         "projectName": "Rota.Entities",
-        "projectPath": "/Users/mervesefil/Projects/Rota/Entities/Rota.Entities.csproj",
-        "packagesPath": "/Users/mervesefil/.nuget/packages/",
-        "outputPath": "/Users/mervesefil/Projects/Rota/Entities/obj/",
+        "projectPath": "/Users/a1-03/Projects/Rota/Entities/Rota.Entities.csproj",
+        "packagesPath": "/Users/a1-03/.nuget/packages/",
+        "outputPath": "/Users/a1-03/Projects/Rota/Entities/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/mervesefil/.nuget/NuGet/NuGet.Config"
+          "/Users/a1-03/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -202,7 +206,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.317/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -16,21 +16,21 @@ namespace Rota.DataAccess.Repositories
             _context = context;
         }
 
-        public async Task<List<PopularTourDto>> GetPopularToursAsync()
+            public async Task<List<Tour>> GetPopularToursAsync()
+            {
+            return await _context.Tours
+    .Include(t => t.Comments)
+    .Where(t => t.Comments.Any())
+    .Where(t => t.Comments.Average(c => c.Rating) >= 4)
+    .ToListAsync();
+        }
+
+        public async Task<IEnumerable<Tour>> SearchAsync(string query)
         {
             return await _context.Tours
-       .Include(t => t.Comments)
-       .Where(t => t.Comments.Any())
-       .Select(t => new PopularTourDto
-       {
-           Id = t.Id,
-           Title = t.Title,
-           ImageUrl = t.ImageUrl // buradan direkt alınıyor
-       })
-       .Where(t => _context.Comments
-           .Where(c => c.TourId == t.Id)
-           .Average(c => c.Rating) >= 4)
-       .ToListAsync();
+                .Where(t => t.Title.Contains(query)).ToListAsync();
+
+           
         }
     }
 }

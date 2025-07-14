@@ -16,7 +16,6 @@
 /Users/a1-03/Projects/Rota/DataAccess/obj/Debug/net7.0/Rota.DataAccess.pdb
 /Users/a1-03/Projects/Rota/DataAccess/obj/Debug/net7.0/Rota.DataAccess.genruntimeconfig.cache
 /Users/a1-03/Projects/Rota/DataAccess/obj/Debug/net7.0/ref/Rota.DataAccess.dll
-/Users/a1-03/Projects/Rota/DataAccess/obj/Debug/net7.0/Rota.DataAccess.csproj.CopyComplete
 /Users/mervesefil/Projects/Rota/DataAccess/bin/Debug/net7.0/Rota.DataAccess.deps.json
 /Users/mervesefil/Projects/Rota/DataAccess/bin/Debug/net7.0/Rota.DataAccess.runtimeconfig.json
 /Users/mervesefil/Projects/Rota/DataAccess/bin/Debug/net7.0/Rota.DataAccess.dll
@@ -36,3 +35,4 @@
 /Users/mervesefil/Projects/Rota/DataAccess/obj/Debug/net7.0/Rota.DataAccess.genruntimeconfig.cache
 /Users/mervesefil/Projects/Rota/DataAccess/obj/Debug/net7.0/ref/Rota.DataAccess.dll
 /Users/mervesefil/Projects/Rota/DataAccess/obj/Debug/net7.0/Rota.DataAccess.csproj.CopyComplete
+/Users/a1-03/Projects/Rota/DataAccess/obj/Debug/net7.0/Rota.DataAccess.csproj.CopyComplete

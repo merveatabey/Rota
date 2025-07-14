@@ -28,7 +28,7 @@ namespace Rota.DataAccess.Repositories
         private IGenericRepository<Message>? _messages;
         private ITourRepository? _customTours;
         private ICommentRepository? _customComments;
-
+        private IUserRepository? _adminUsers;
         public UnitOfWork(AppDbContext context)
         {
             _context = context;
@@ -50,6 +50,8 @@ namespace Rota.DataAccess.Repositories
         public ITourRepository CustomTours => _customTours ??= new TourRepository(_context);
 
         public ICommentRepository CustomComments => _customComments ??= new CommentRepository(_context);
+
+        public IUserRepository AdminUsers => _adminUsers ??= new UserRepository(_context);
 
         public async Task<bool> SaveAsync()
         {
